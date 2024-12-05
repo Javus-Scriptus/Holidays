@@ -15,7 +15,20 @@
 }
 
 .partners {
+  &__cards {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   &__card {
+    width: 194px;
+    height: 197px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
     &__heading {
       color: #333;
       text-align: center;
