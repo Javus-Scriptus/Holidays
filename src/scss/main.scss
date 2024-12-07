@@ -1,9 +1,9 @@
-// @import url(./utils/placeholders);
-@import url(./utils/mixins);
-// @import url('./utils/placeholder');
+@import url('./utils/_base.scss');
+@import url('./utils/_mixins.scss');
+@import url('./utils/_variables.scss');
+@import url('./utils/_placeholders.scss');
 
 @import url('./components/_header.scss');
-@import url('./components/_header');
-@import url('./components/_section1');
-@import url('./components/_section2');
-@import url('./components/_footer');
+@import url('./components/_section-1.scss');
+@import url('./components/_section-2.scss');
+@import url('./components/_footer.scss');
