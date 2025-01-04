@@ -1,48 +1,74 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.section-1 {
+  background-image: url("../img/section_1/background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.partners__cards {
-  color: #333;
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-1 {
+    background-image: url("../img/section_1/background-1@2x.jpg");
+  }
+}
+
+.box__section1 {
+  display: block;
+  margin: 0 auto;
+  color: #FFFFFF;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22.004px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
 
-.partners {
-  &__cards {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  &__h1 {
+    font: 900 52px 'Montserrat', sans-serif;
   }
 
-  &__card {
-    width: 194px;
-    height: 197px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  &__p {
+    font: 300 24px 'Roboto', sans-serif;
+  }
 
-    &__heading {
-      color: #333;
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14.011px;
-      font-weight: 700;
+  &__btn {
+    font: 900 14px 'Montserrat', sans-serif;
+    text-align: center;
+    width: 228px;
+    height: 43px;
+    background-color: #FF4E50;
+    border: none;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+  .box__section1 {
+    &__h1 {
+      font: 900 52px 'Montserrat', sans-serif;
     }
 
-    &__text {
-      color: #666;
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-      font-size: 14.011px;
-      font-weight: 300;
+    &__p {
+      font: 300 24px 'Roboto', sans-serif;
+    }
+
+    &__btn {
+      width: 228px;
+      height: 42px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .box__section1 {
+    &__h1 {
+      font: 900 30px 'Montserrat', sans-serif;
+    }
+
+    &__p {
+      font: 300 18px 'Roboto', sans-serif;
+    }
+
+    &__btn {
+      width: 282px;
+      height: 43px;
     }
   }
 }
