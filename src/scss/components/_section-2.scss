@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.partners__cards {
+  color: #333;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22.004px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.partners {
+  &__cards {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 194px;
+    height: 197px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &__heading {
+      color: #333;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14.011px;
+      font-weight: 700;
+    }
+
+    &__text {
+      color: #666;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14.011px;
+      font-weight: 300;
+    }
+  }
+}
